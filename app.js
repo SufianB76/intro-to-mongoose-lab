@@ -65,7 +65,7 @@ const connect = async () => {
         }
         else if (decision === '5') {
             console.log('exiting...')
-            process.exit()
+            mongoose.connection.close()
             break;
         }
         else {
